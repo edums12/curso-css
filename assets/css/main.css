@@ -1,19 +1,18 @@
-/*CSS Reset*/
+/*Basic CSS Reset*/
 *, body{
     padding: 0;
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
-    color: #333;
     font-weight: 500;
 }
 
 /*CSS*/
+
+    /* Css definições rápidas prontas */
 span.light{font-weight: lighter !important;}
 .text-right{text-align: right;}
-
 .no-padding{padding: 0 !important;}
-
 .align-items-center{align-items: center;}
 
 .pull-right{
@@ -21,13 +20,24 @@ span.light{font-weight: lighter !important;}
     right: 0;
 }
 
+.pull-left{
+    position: absolute;
+    left: 0;
+}
+
+.pull-center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+    /* Definições para o botão */
 .btn{
     padding: .6em 1.3em;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .9em;
 }
-
+        /* Estilos BOTAO */
 .btn-default{
     color: #333;
     background: #e0e0e0;
@@ -37,14 +47,21 @@ span.light{font-weight: lighter !important;}
     background: #ccc;
 }
 
+.btn-primary{
+    color: #fff;
+    background: #1c3aa9;
+}
+
+.btn-primary:hover{
+    background: #3962f7;
+}
+
 /*Grid*/
 .row{
     display: flex;
     width: 100%;
     position: relative;
 }
-
-.align-items-center{align-items: center;}
 
 .col-1{max-width: 8.333333%;}
 .col-2{max-width: 16.666667%;}
@@ -300,6 +317,9 @@ header.header-bg ul li .profile i.fa{
 
 .col-atividades .box .header .atividade.concluida{color: #0C9D58;}
 .col-atividades .box .header .atividade.concluida i.fa{background: #0C9D58;}
+
+.col-atividades .box .header .atividade.aguardo{color: #888888;}
+.col-atividades .box .header .atividade.aguardo i.fa{display: none;}
 
 .col-atividades .box .header .atividade.n-concluida{color: #ef002f;}
 .col-atividades .box .header .atividade.n-concluida i.fa{background: #ef002f;}
